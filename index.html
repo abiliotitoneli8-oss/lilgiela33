@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Farm de Aura · lilgiela33</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Doto:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+<div class="wrap">
+  <main class="stage">
+    <h1>Farm de Aura da lilgiela33</h1>
+    <div class="score" id="score">0</div>
+    <p class="sub">aura · <span id="aps">0</span> por segundo · <span id="apc">1</span> por clique</p>
+    <span class="title" id="rank">Sem aura</span>
+    <div class="orb-box"><button id="orb" aria-label="Farmar aura"><img src="foto.jpg" alt="Foto da lilgiela33" draggable="false"></button></div>
+    <div class="player">
+      <button id="mPlay" aria-label="Tocar ou pausar música">▶ Música</button>
+      <button id="mNext" aria-label="Próxima música">⏭</button>
+      <input id="mVol" type="range" min="0" max="1" step="0.05" value="0.5" aria-label="Volume">
+      <span id="mName"></span>
+    </div>
+    <div class="tools">
+      <button id="reset">Zerar progresso</button>
+    </div>
+  </main>
+  <aside>
+    <section class="panel" style="margin-bottom:14px"><h2>Melhorias de clique</h2><div id="ups"></div></section>
+    <section class="panel"><h2>Geradores de aura</h2><div id="gens"></div></section>
+  </aside>
+</div>
+<section class="gallery"><h2>Fotos</h2><div id="fotos"></div></section>
+<div id="lb" role="dialog" aria-label="Foto ampliada"><img alt=""></div>
+<script src="script.js"></script>
+</body>
+</html>
